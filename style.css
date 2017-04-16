@@ -1,0 +1,996 @@
+html, body
+{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #E9EBEE;
+  font-family: ariel, sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.navigation
+{
+  z-index: 4;
+  width: 100vw;
+}
+
+.navigation ul
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+
+.navigation ul .item
+{
+  font-size: 1em;
+  box-sizing: border-box;
+  text-align: center;
+  width: calc(100% / 7);
+  height: 9vh;
+  transition: all 350ms ease-in-out;
+  background-color: lightblue;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation ul .item:hover
+{
+  background-color: lightcyan;
+}
+
+.navigation ul .item:first-child
+{
+  width: calc(100% / 7);
+  background-image: url('Media/Woodlands%20LogoLarge.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.userContainer
+{
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 7vh;
+  display: inline-flex;
+  background-color: gray;
+  z-index: 2;
+  overflow-y: hidden;
+}
+
+.userContainer .userImage
+{
+  width: 90%;
+  border-right: 1px solid dimgray;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.userContainer .userImage img
+{
+  width: 5%;
+  height: 85%;
+  margin: 0 94%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.userContainer .userName
+{
+  width: 10%;
+  text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.topContainer
+{
+  height: 12.8vh;
+  max-height: 12.8vh;
+}
+
+.bottomContainer
+{
+  height: calc(100vh - 12.8vh);
+  max-height: calc(100vh - 12.8);
+}
+
+.main
+{
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  overflow-y: scroll;
+  z-index: 3;
+}
+
+.lContainer
+{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  perspective: 1000px;
+}
+
+.leftContainer
+{
+  width: 45%;
+  height: 100%;
+  background-image: url("Media/Woodlands%20LogoLarge.jpg");
+  background-position: center;
+  background-size: 60% 40%;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  -webkit-filter: grayscale(100%) opacity(70%);
+}
+
+.Rightcontainer
+{
+  width: 55%;
+  height: 100%;
+  background-color: paleturquoise;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0em 1.5em;
+}
+
+.Rightcontainer p
+{
+  font-size: 1.3em;
+}
+
+.Rightcontainer h1
+{
+  font-size: 2.2em
+}
+
+.loginContainer
+{
+  border: 1px solid black;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.loginContainer form
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.loginContainer form .text
+{
+  margin: 1.3em 0;
+  background-color: inherit;
+  border-bottom: 2px solid black;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.loginContainer form .submit[type=submit]
+{
+  width: 60%;
+  border: 2px solid black;
+  font-size: 1.2em;
+  margin-bottom: 1.3em;
+  background-color: palegreen;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.loginContainer form .submit:hover
+{
+  border-radius: 7px;
+}
+
+.title
+{
+  margin: 0 auto;
+  margin-top: 1%
+}
+
+.title h1
+{
+  padding: 1%;
+  margin: 0 auto 0.5em auto;
+  font-size: 3.3em;
+  width: 85%;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  font-variant: small-caps
+}
+
+.tiles
+{
+  border: 2px solid black;
+  max-width: 90%;
+  margin: 1.5% auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.topRow
+{
+  display: flex;
+  flex-flow: row;
+  max-width: 95%;
+  margin: 0.4em auto 0.4em auto;
+}
+
+.bottomRow
+{
+  display: flex;
+  flex-flow: row;
+  max-width: 95%;
+  margin: 0.4em auto 0.4em auto;
+}
+
+.module
+{
+  border: 1px solid black;
+  margin: 0em 0.1em;
+  box-sizing: border-box;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.module:nth-of-type(1)
+{
+  background-color: palegreen;
+}
+
+.module:nth-of-type(2)
+{
+  background-color: paleturquoise;
+}
+
+.module:nth-of-type(3)
+{
+  background-color: steelblue;
+}
+
+.module:nth-of-type(4)
+{
+  background-color: lightcoral;
+}
+
+.module:nth-of-type(5)
+{
+  background-color: indianred;
+}
+
+.module:nth-of-type(6)
+{
+  background-color: firebrick;
+}
+
+.overview
+{
+  margin: 2% auto 2% auto;
+  max-width: 90%;
+  border: 2px solid black;
+  display: flex;
+}
+
+.overview .left
+{
+  max-width: 50%;
+  width: 50%;
+  max-height: 50vh;
+  background-color: #C0E4F4;
+  border-right: 2px solid black;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.overview .left .aContain
+{
+  overflow-y: scroll;
+  max-height: 40vh;
+}
+
+.overview .left h1
+{
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  padding: 2% 0 2% 0;
+}
+
+.overview .left .item
+{
+  width: 95%;
+  margin: 2% auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.overview .left .item h1
+{
+  font-size: 1.7em
+}
+
+.overview .right
+{
+  max-width: 50%;
+  width: 50%;
+  background-color: #75F0ED;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.overview .right h1
+{
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  padding: 2% 0 2% 0;
+}
+
+.copyright
+{
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  padding: 0.5%;
+  border-top: 2px solid black;
+}
+
+.mainAttendance
+{
+  width: 80%;
+  margin: 1% auto;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+.mainAttendance
+{
+  width: 80%;
+  margin: 1% auto;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+.mainAttendance h1
+{
+  border-bottom: 2px solid black;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1% 0;
+  background-color: #ADD8E6;
+}
+
+.mainAttendance p
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2% 0;
+  font-size: 3.3em;
+}
+
+.moduleAttendance
+{
+  width: 80%;
+  margin: 1% auto;
+  border: 2px solid black;
+}
+
+.moduleAttendance > h1
+{
+  border-bottom: 2px solid black;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1% 0;
+  background-color: #ADD8E6;
+}
+
+.moduleAttendance .miContainer
+{
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+
+.moduleAttendance .mAttend
+{
+  width: 95%;
+  margin: 1% auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.moduleAttendance .mAttend:nth-of-type(1)
+{
+  background-color: palegreen;
+}
+
+.moduleAttendance .mAttend:nth-of-type(2)
+{
+  background-color: paleturquoise;
+}
+
+.moduleAttendance .mAttend:nth-of-type(3)
+{
+  background-color: steelblue;
+}
+
+.moduleAttendance .mAttend:nth-of-type(4)
+{
+  background-color: lightcoral;
+}
+
+.moduleAttendance .mAttend:nth-of-type(5)
+{
+  background-color: indianred;
+}
+
+.moduleAttendance .mAttend:nth-of-type(6)
+{
+  background-color: firebrick;
+}
+
+.moduleAttendance .mAttend h1
+{
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1% 0;
+  width: 95%;
+  border-bottom: 1px solid black;
+}
+
+.personalAttendance
+{
+  margin: 1% auto;
+  width: 80%;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+.personalAttendance > h1
+{
+  border-bottom: 2px solid black;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1% 0;
+  background-color: #ADD8E6;
+}
+
+.\34 04 {
+    width: 80%;
+    margin: 7% auto 2% auto;
+    box-sizing: border-box;
+    padding: 1%;
+    border: 2px solid black;
+}
+
+.\34 04 h1
+{
+    border-bottom: 2px solid black;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1% 0;
+    background-color: #ADD8E6;
+}
+
+.\34 04 p
+{
+    box-sizing: border-box;
+    padding: 1%;
+    font-size: 1.3em;
+}
+
+.announcements {
+    width: 80%;
+    margin: 2% auto;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.announcements h1 {
+    border-bottom: 2px solid black;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1% 0;
+    background-color: #ADD8E6;
+}
+
+.announcements .annContainer {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.announcements .annContainer .acItemM {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 2% auto;
+    border: 1px solid black;
+    background-color: palegoldenrod;
+}
+
+.announcements .annContainer .acItemP {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 2% auto;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+.announcements .annContainer .acItemS {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 2% auto;
+    border: 1px solid black;
+    background-color: burlywood;
+}
+
+.error
+{
+  position: absolute;
+  background-color: rgba(255, 0 ,0 ,0.7);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 100%;
+  z-index: 3000;
+  padding: 1% 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  animation: error 5s 1 forwards; 
+  top: 0;
+  left: 0;
+}
+
+@keyframes error
+{
+  0%
+  {
+    top: -100%;
+  }
+  15%
+  {
+    top: 0;
+  }
+  85%
+  {
+    top: 0;
+  }
+  100%
+  {
+    top: -100%;
+  }
+}
+
+.yearSelecter
+{
+  width: 80%;
+  height: 55vh;
+  margin: 1% auto;
+  border: 2px solid black;
+}
+
+.yearSelecter h2
+{
+    border-bottom: 2px solid black;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1% 0;
+    background-color: #ADD8E6;
+}
+
+.yearSelecter form
+{
+  margin: 0;
+  padding: 1% 0;
+  border-bottom: 2px solid black;
+}
+
+.yearSelecter form select
+{
+  width: 10%;
+  text-align: center;
+  background-color: rgba(173, 216, 230, 0.7);
+  border: 1px solid black;
+}
+
+.moduleMenu
+{
+  width: 25%;
+  border-right: 2px solid black;
+  padding-bottom: 1%;
+  float: left;
+  height: 34.5vh;
+  box-sizing: border-box;
+}
+
+.moduleMenu h2
+{
+  margin-bottom: 1%; 
+}
+
+.moduleMenu button
+{
+  width: 90%;
+  height: auto;
+  margin: 1% auto;
+  background-color: lightskyblue;
+  border: 2px solid black;
+  font-size: 1em;
+  padding: 1% 0;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.moduleMenu button:hover
+{
+  border-radius: 7px;
+  z-index: 5;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.moduleMenu button:active
+{
+  box-shadow: none;
+}
+
+.assessmentMenu
+{
+  width: 75%;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: last baseline;
+  align-items: last baseline;
+  height: auto;
+  bottom: 0px;
+}
+
+.assessmentMenu div
+{
+  width: calc(100% / 3);
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  transition: all 350ms ease-in-out;
+  cursor: pointer;
+}
+
+.assessmentMenu div a
+{
+  color: black;
+  text-decoration: none;
+}
+
+.assessmentMenu div:hover
+{
+  background-color: cornflowerblue;
+}
+
+.assessmentMenu div:last-of-type
+{
+  border-right: none;
+}
+
+.assess1
+{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: inline-flex;
+  flex-direction: column;
+  width: 75%;
+  box-sizing: border-box;
+  padding-bottom: 0.6%;
+}
+
+.assess1 .title
+{
+  width: 100%;
+  background-color: #ADD8E6;
+  font-size: 1.1em;
+  border-bottom: 1px solid black;
+  padding: 1% 0;
+}
+
+.assess2
+{
+  display: inline-flex;
+  flex-direction: column;
+  width: 75%;
+  box-sizing: border-box;
+  padding-bottom: 0.55%;
+}
+
+.assess2 .title
+{
+  width: 100%;
+  background-color: #ADD8E6;
+  font-size: 1.1em;
+  padding: 1% 0;
+  border-bottom: 1px solid black;
+}
+
+/* ---------------------- ISH ------------------------------ */
+
+#topicHeading{
+ width: 95vw;
+  height: 15%;
+  border:5px solid gray;
+  border-radius:0%;
+  text-align: center;
+   font-family: ariel, sans-serif;
+   margin-left: 1.5vw;
+   font-size:6vh;
+}
+
+.forumComment{
+  width: 95vw;
+  height: 20%;
+  border:5px solid gray;
+  text-align: center;
+  font-family: ariel, sans-serif;
+  border-radius:0%;
+  margin-left: 1.5vw;
+  display: block;
+}
+
+#fForm{
+  width: 100%;
+  height: 100%;
+  border:2px solid gray;
+  text-align: center;
+  font-family: ariel, sans-serif;
+  border-radius:0%;
+  margin-left: 0vw;
+  display: block;
+}
+
+.diplayComment{
+  width: 95vw;
+  height: 10%;
+  border:5px solid gray;
+  border-radius:0%;
+  margin-left: 1.5vw;
+  display: block;
+}
+
+#cInput{
+margin-top: 1vh;
+margin-left:0.5vw;
+float: left;
+  display: block;
+
+}
+
+#userImg{
+
+  border:3px solid gray;
+  width: 15vw;
+  height: 70%;
+  float: left;
+  margin-left:1%;
+  margin-top: 0.75%;
+}
+
+#userComment{
+  width: 60%;
+  height: 70%;
+  border:3px solid gray;
+  float: left;
+  margin-top: 0.75%;
+  margin-right:1%;
+
+}
+
+#replyButton{
+margin-top: 0.75%;
+
+}
+
+#cTimeDate{
+  width: 10%;
+  height: 70%;
+  border:3px solid gray;
+  float: left;
+  margin-top: 0.75%;
+  margin-right:1%;
+}
+
+
+#fForm input[type="submit"]{
+ font-size: 25px;
+  margin-top: 3.5%;
+  margin-left:5%;
+  float: left;
+  display: block;
+}
+
+
+#courseTitle{
+ width: 15%;
+  height: 8%;
+  border:3px solid gray;
+  border-radius:0%;
+  text-align: center;
+   font-family: ariel, sans-serif;
+   margin-left: 4vw;
+   margin-top: 1.5vh;
+   font-size:20px;
+}
+
+#selectYear{
+ width: 8%;
+  height: 5%;
+  font-family: ariel, sans-serif;
+   margin-left: 20vw;
+   margin-top: -2.7%;
+   font-size:20px;
+   position: absolute;
+}
+
+#selectAssignment{
+ width: 70%;
+  height: 60%;
+  border:3px solid gray;
+  border-radius:0%;
+  text-align: center;
+   font-family: ariel, sans-serif;
+   margin-left: 27vw;
+   margin-top: 1.5vh;
+   font-size:20px;
+   position: absolute;
+}
+
+#selectModule{
+ width: 25%;
+  height: 40%;
+  border:3px solid gray;
+  border-radius:0%;
+  text-align: center;
+  font-family: ariel, sans-serif;
+  margin-left: 1.5vw;
+  margin-top: 1.5vh;
+  font-size:20px;
+  position: absolute;
+}
+
+#selectMenu{
+  width: 95.5%;
+  height: 10%;
+  border:3px solid gray;
+  border-radius:0%;
+  text-align: left;
+  font-family:sans-serif;
+  margin-left: 1.5vw;
+  margin-top: 63vh;
+  font-size:20px;
+  position: absolute;
+}
+
+.btnModule{
+  width: 250px;
+  height: 25px;
+  font-size:15px;
+}
+
+
+.aSelection{
+  width: 100%;
+  height: 35%;
+  border:1px solid gray;
+  border-radius:0%;
+  margin-left: 0%;
+    float: left;
+  display: block;
+}
+
+#aHeading{
+ width: 100%;
+  height: 10%;
+  border:1px solid gray;
+  border-radius:0%;
+
+}
+
+.btnMenu{
+  width: 150px;
+  height: 25px;
+  font-size:15px;
+  text-align: center;
+  margin-right: 10%;
+  margin-top: 2vh;
+  background-color: silver;
+  border-radius: 5%;
+  float: right;
+  display: block;
+
+}
+#aTitle{
+  width: 63%;
+  float: left;
+  display: block;
+  text-align: left;
+
+
+}
+
+#aDeadline{
+  width: 18%;
+  float: left;
+  display: block;
+
+}
+
+#aType{
+  width: 19%;
+  float: left;
+  display: block;
+  text-align: right;
+
+  text-align: center;
+}
+
+#aDescribe{
+  width: 63%;
+  height: 130px;
+  float: left;
+  display: block;
+  text-align: left;
+  border:1px solid gray;
+  border-radius:0%;
+}
+
+#aDateTime{
+  width: 18%;
+  height: 130px;
+  float: left;
+  display: block;
+  text-align: right;
+  border:1px solid gray;
+  border-radius:0%;
+}
+
+#aTSelect{
+  width: 18%;
+  height: 130px;
+  float: left;
+  display: block;
+  text-align: center;
+  border:1px solid gray;
+  border-radius:0%;
+
+}
