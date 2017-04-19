@@ -1,4 +1,5 @@
 <?php
+  require 'data-connectoin.php';
   $title = 'WUC | Overview';
   include 'head.php';
   echo '
@@ -49,45 +50,23 @@
         <h1>Quick Modules</h1>
       </div>
       <div class="tiles">
-        <div class="topRow">
-          <div class="module">
-            <h1>Module Name</h1>
-          </div>
-          <div class="module">
-            <h1>Module Name</h1>
-          </div>
-          <div class="module">
-            <h1>Module Name</h1>
-          </div>
-          <div class="module">
-            <h1>Module Name</h1>
-          </div>
-          <div class="module">
-            <h1>Module Name</h1>
-          </div>
-          <div class="module">
-            <h1>Module Name</h1>
-          </div>
+        <div class="topRow">';
+        $stmt = $pdo->prepare('SELECT * FROM modules LIMIT 6');
+        $stmt->execute();
+        foreach ($stmt as $key)
+        {
+            echo '<div class="module">' . $key['title'] . '</div>';
+        }
+
+          echo '
         </div>
-      <div class="bottomRow">
-        <div class="module">
-          <h1>Module Content</h1>
-        </div>
-        <div class="module">
-          <h1>Module Content</h1>
-        </div>
-        <div class="module">
-          <h1>Module Content</h1>
-        </div>
-        <div class="module">
-          <h1>Module Content</h1>
-        </div>
-        <div class="module">
-          <h1>Module Content</h1>
-        </div>
-        <div class="module">
-          <h1>Module Content</h1>
-        </div>
+      <div class="bottomRow">';
+        $stmt->execute();
+        foreach ($stmt as $key)
+        {
+            echo '<div class="module">' . $key['module_code'] . '</div>';
+        }
+        echo '
       </div>
     </div>
   </div>

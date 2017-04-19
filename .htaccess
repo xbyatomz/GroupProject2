@@ -1,4 +1,4 @@
-ErrorDocument 404 /GPMockups/Template/notfound.php
+ErrorDocument 404 /notfound.php
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
