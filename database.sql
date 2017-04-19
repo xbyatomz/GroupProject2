@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.22-MariaDB, for Linux (x86_64)
+-- MySQL dump 10.16  Distrib 10.1.18-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: 
 -- ------------------------------------------------------
--- Server version	10.1.22-MariaDB
+-- Server version	10.1.18-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -19,7 +19,7 @@
 -- Current Database: `mysql`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `mysql` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `mysql` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
 USE `mysql`;
 
@@ -409,7 +409,7 @@ CREATE TABLE `innodb_index_stats` (
 
 LOCK TABLES `innodb_index_stats` WRITE;
 /*!40000 ALTER TABLE `innodb_index_stats` DISABLE KEYS */;
-INSERT INTO `innodb_index_stats` VALUES ('mysql','gtid_slave_pos','PRIMARY','2016-04-22 18:35:57','n_diff_pfx01',0,1,'domain_id'),('mysql','gtid_slave_pos','PRIMARY','2016-04-22 18:35:57','n_diff_pfx02',0,1,'domain_id,sub_id'),('mysql','gtid_slave_pos','PRIMARY','2016-04-22 18:35:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_slave_pos','PRIMARY','2016-04-22 18:35:57','size',1,NULL,'Number of pages in the index'),('woodlands','admin_users','PRIMARY','2017-04-06 14:37:49','n_diff_pfx01',0,1,'user_id'),('woodlands','admin_users','PRIMARY','2017-04-06 14:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','admin_users','PRIMARY','2017-04-06 14:37:49','size',1,NULL,'Number of pages in the index'),('woodlands','assignments','PRIMARY','2017-04-06 14:37:49','n_diff_pfx01',2,1,'assignment_id'),('woodlands','assignments','PRIMARY','2017-04-06 14:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','assignments','PRIMARY','2017-04-06 14:37:49','size',1,NULL,'Number of pages in the index'),('woodlands','events','PRIMARY','2017-04-06 14:37:49','n_diff_pfx01',2,1,'event_id'),('woodlands','events','PRIMARY','2017-04-06 14:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','events','PRIMARY','2017-04-06 14:37:49','size',1,NULL,'Number of pages in the index'),('woodlands','grades','PRIMARY','2017-04-06 14:38:19','n_diff_pfx01',34,1,'grade_id'),('woodlands','grades','PRIMARY','2017-04-06 14:38:19','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','grades','PRIMARY','2017-04-06 14:38:19','size',1,NULL,'Number of pages in the index'),('woodlands','modules','PRIMARY','2017-04-06 14:37:49','n_diff_pfx01',17,1,'module_code'),('woodlands','modules','PRIMARY','2017-04-06 14:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','modules','PRIMARY','2017-04-06 14:37:49','size',1,NULL,'Number of pages in the index'),('woodlands','staff','PRIMARY','2017-04-06 14:37:59','n_diff_pfx01',2,1,'staffId'),('woodlands','staff','PRIMARY','2017-04-06 14:37:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','staff','PRIMARY','2017-04-06 14:37:59','size',1,NULL,'Number of pages in the index'),('woodlands','students','PRIMARY','2017-04-06 14:38:09','n_diff_pfx01',19,1,'studentId'),('woodlands','students','PRIMARY','2017-04-06 14:38:09','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','students','PRIMARY','2017-04-06 14:38:09','size',1,NULL,'Number of pages in the index'),('woodlands','timetables','PRIMARY','2017-04-06 14:37:49','n_diff_pfx01',0,1,'timetable_id'),('woodlands','timetables','PRIMARY','2017-04-06 14:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','timetables','PRIMARY','2017-04-06 14:37:49','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('mysql','gtid_slave_pos','PRIMARY','2016-04-22 18:35:57','n_diff_pfx01',0,1,'domain_id'),('mysql','gtid_slave_pos','PRIMARY','2016-04-22 18:35:57','n_diff_pfx02',0,1,'domain_id,sub_id'),('mysql','gtid_slave_pos','PRIMARY','2016-04-22 18:35:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_slave_pos','PRIMARY','2016-04-22 18:35:57','size',1,NULL,'Number of pages in the index'),('woodlands','admin_users','PRIMARY','2017-04-19 10:06:38','n_diff_pfx01',0,1,'user_id'),('woodlands','admin_users','PRIMARY','2017-04-19 10:06:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','admin_users','PRIMARY','2017-04-19 10:06:38','size',1,NULL,'Number of pages in the index'),('woodlands','announcements','PRIMARY','2017-04-19 10:07:34','n_diff_pfx01',1,1,'announcement_id'),('woodlands','announcements','PRIMARY','2017-04-19 10:07:34','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','announcements','PRIMARY','2017-04-19 10:07:34','size',1,NULL,'Number of pages in the index'),('woodlands','assignments','PRIMARY','2017-04-19 10:06:38','n_diff_pfx01',2,1,'assignment_id'),('woodlands','assignments','PRIMARY','2017-04-19 10:06:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','assignments','PRIMARY','2017-04-19 10:06:38','size',1,NULL,'Number of pages in the index'),('woodlands','events','PRIMARY','2017-04-19 10:06:38','n_diff_pfx01',2,1,'event_id'),('woodlands','events','PRIMARY','2017-04-19 10:06:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','events','PRIMARY','2017-04-19 10:06:38','size',1,NULL,'Number of pages in the index'),('woodlands','grades','PRIMARY','2017-04-19 10:07:09','n_diff_pfx01',34,1,'grade_id'),('woodlands','grades','PRIMARY','2017-04-19 10:07:09','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','grades','PRIMARY','2017-04-19 10:07:09','size',1,NULL,'Number of pages in the index'),('woodlands','modules','PRIMARY','2017-04-19 10:06:38','n_diff_pfx01',17,1,'module_code'),('woodlands','modules','PRIMARY','2017-04-19 10:06:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','modules','PRIMARY','2017-04-19 10:06:38','size',1,NULL,'Number of pages in the index'),('woodlands','staff','PRIMARY','2017-04-19 10:06:48','n_diff_pfx01',2,1,'staffId'),('woodlands','staff','PRIMARY','2017-04-19 10:06:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','staff','PRIMARY','2017-04-19 10:06:48','size',1,NULL,'Number of pages in the index'),('woodlands','students','PRIMARY','2017-04-19 10:06:59','n_diff_pfx01',19,1,'studentId'),('woodlands','students','PRIMARY','2017-04-19 10:06:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','students','PRIMARY','2017-04-19 10:06:59','size',1,NULL,'Number of pages in the index'),('woodlands','timetables','PRIMARY','2017-04-19 10:06:39','n_diff_pfx01',0,1,'timetable_id'),('woodlands','timetables','PRIMARY','2017-04-19 10:06:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('woodlands','timetables','PRIMARY','2017-04-19 10:06:39','size',1,NULL,'Number of pages in the index');
 /*!40000 ALTER TABLE `innodb_index_stats` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -437,7 +437,7 @@ CREATE TABLE `innodb_table_stats` (
 
 LOCK TABLES `innodb_table_stats` WRITE;
 /*!40000 ALTER TABLE `innodb_table_stats` DISABLE KEYS */;
-INSERT INTO `innodb_table_stats` VALUES ('mysql','gtid_slave_pos','2016-04-22 18:35:57',0,1,0),('woodlands','admin_users','2017-04-06 14:37:49',0,1,0),('woodlands','assignments','2017-04-06 14:37:49',2,1,0),('woodlands','events','2017-04-06 14:37:49',2,1,0),('woodlands','grades','2017-04-06 14:38:19',34,1,0),('woodlands','modules','2017-04-06 14:37:49',17,1,0),('woodlands','staff','2017-04-06 14:37:59',2,1,0),('woodlands','students','2017-04-06 14:38:09',19,1,0),('woodlands','timetables','2017-04-06 14:37:49',0,1,0);
+INSERT INTO `innodb_table_stats` VALUES ('mysql','gtid_slave_pos','2016-04-22 18:35:57',0,1,0),('woodlands','admin_users','2017-04-19 10:06:38',0,1,0),('woodlands','announcements','2017-04-19 10:07:34',1,1,0),('woodlands','assignments','2017-04-19 10:06:38',2,1,0),('woodlands','events','2017-04-19 10:06:38',2,1,0),('woodlands','grades','2017-04-19 10:07:09',34,1,0),('woodlands','modules','2017-04-19 10:06:38',17,1,0),('woodlands','staff','2017-04-19 10:06:48',2,1,0),('woodlands','students','2017-04-19 10:06:59',19,1,0),('woodlands','timetables','2017-04-19 10:06:39',0,1,0);
 /*!40000 ALTER TABLE `innodb_table_stats` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -934,6 +934,34 @@ INSERT INTO `admin_users` VALUES (1,'admin1','password');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `announcements`
+--
+
+DROP TABLE IF EXISTS `announcements`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `announcements` (
+  `announcement_id` int(5) NOT NULL AUTO_INCREMENT,
+  `course_code` varchar(45) DEFAULT NULL,
+  `module_code` varchar(45) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `content` varchar(2000) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  PRIMARY KEY (`announcement_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `announcements`
+--
+
+LOCK TABLES `announcements` WRITE;
+/*!40000 ALTER TABLE `announcements` DISABLE KEYS */;
+INSERT INTO `announcements` VALUES (2,'COMP1001','C1003','Test1','Testttt','2017-04-13 13:54:55');
+/*!40000 ALTER TABLE `announcements` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `assignments`
 --
 
@@ -957,6 +985,51 @@ LOCK TABLES `assignments` WRITE;
 /*!40000 ALTER TABLE `assignments` DISABLE KEYS */;
 INSERT INTO `assignments` VALUES (1001,'Problem Solving Assignment 1','C1003','COMP1001'),(1002,'Computing Mathmatics Z Notation Assignment 1','C1001','COMP1002');
 /*!40000 ALTER TABLE `assignments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `attendance`
+--
+
+DROP TABLE IF EXISTS `attendance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `attendance` (
+  `student_id` int(10) DEFAULT NULL,
+  `module_code` varchar(24) DEFAULT NULL,
+  `week1` varchar(45) DEFAULT NULL,
+  `week2` varchar(45) DEFAULT NULL,
+  `week3` varchar(45) DEFAULT NULL,
+  `week4` varchar(45) DEFAULT NULL,
+  `week5` varchar(45) DEFAULT NULL,
+  `week6` varchar(45) DEFAULT NULL,
+  `week7` varchar(45) DEFAULT NULL,
+  `week8` varchar(45) DEFAULT NULL,
+  `week9` varchar(45) DEFAULT NULL,
+  `week10` varchar(45) DEFAULT NULL,
+  `week11` varchar(45) DEFAULT NULL,
+  `week12` varchar(45) DEFAULT NULL,
+  `week13` varchar(45) DEFAULT NULL,
+  `week14` varchar(45) DEFAULT NULL,
+  `week15` varchar(45) DEFAULT NULL,
+  `week16` varchar(45) DEFAULT NULL,
+  `week17` varchar(45) DEFAULT NULL,
+  `week18` varchar(45) DEFAULT NULL,
+  `week19` varchar(45) DEFAULT NULL,
+  `week20` varchar(45) DEFAULT NULL,
+  `attendance_id` int(5) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`attendance_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `attendance`
+--
+
+LOCK TABLES `attendance` WRITE;
+/*!40000 ALTER TABLE `attendance` DISABLE KEYS */;
+INSERT INTO `attendance` VALUES (20130122,'C1001','Present','Present',NULL,'Absent',NULL,'Present','Present',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1),(20130107,'C1002','Absent',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2);
+/*!40000 ALTER TABLE `attendance` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -1091,7 +1164,6 @@ CREATE TABLE `students` (
   `courseCode` varchar(45) DEFAULT NULL,
   `date_of_birth` varchar(45) DEFAULT NULL,
   `record_status` varchar(45) DEFAULT NULL,
-  `password` varchar(256) NOT NULL,
   PRIMARY KEY (`studentId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1102,7 +1174,7 @@ CREATE TABLE `students` (
 
 LOCK TABLES `students` WRITE;
 /*!40000 ALTER TABLE `students` DISABLE KEYS */;
-INSERT INTO `students` VALUES ('Shane','Paul','Donnelly','20 Thornbridge Close\nRushden\nNorthamptonshire\nNN109NJ',15400372,'0775485548','shanedonnelly@hotmail.com','COMP1001','1992-10-12','Live','$2y$10$U44ntbdSZIEQUyfdcnAbOeH7Re6DpOQ7pFhLrIvSi4YEeqw/bKXKu'),('Christopher','Graham','Edwards','1 Made-Up Street',20130106,'0758475847','christopher@gmail.com','COMP1001','1992-10-11','Live',''),('Graham','Daniel','Vinitchaikul','1 Made-Up Street',20130107,'0748574837','graham@gmail.com','COMP1001','1992-02-12','Live',''),('Asad','Ian','Cox','1 Made-Up Street',20130113,'0786758499','asad@gmail.com','COMP1001','1992-10-12','Live',''),('Andrew','Hiren','Carpenter','1 Made-Up Street',20130116,'0748574888','andrew@gmail.com','COMP1001','1992-10-12','Live',''),('Alexander','Brul','Begum','1 Made-Up Street',20130117,'0735262534','alexander@gmail.com','COMP1001','1992-10-12','Live',''),('Adam','Daniel','Stevenson','1 Made-Up Street',20130119,'0724352111','adam@gmail.com','COMP1001','1992-10-12','Live',''),('Benjamin','Darren','Corke','1 Made-Up Street',20130122,'0725342511','benjamin@gmail.com','COMP1002','1992-10-12','Live',''),('Andrew','Gavin','Brown','1 Made-Up Street',20130124,'0736472344','andrew@gmail.com','COMP1002','1992-10-12','Live',''),('David','Graham','O\'toole','1 Made-Up Street',20130127,'0758462984','david@gmail.com','COMP1002','1992-10-12','Live',''),('Darren','Gary','Mathoo','1 Made-Up Street',20130128,'0748372837','darren@gmail.com','COMP1002','1992-10-12','Live',''),('Adam','Ben','Wright','1 Made-Up Street',20130130,'0736253625','adam@gmail.com','COMP1002','1992-10-12','Live',''),('Andrew','Ben','Bonney','1 Made-Up Street',20130132,'0735263527','andrew@gmail.com','COMP1002','1992-10-12','Live',''),('Japhet','Ruffel','Horton','1 Made-Up Street',20130133,'0348348348','japhet@gmail.com','COMP1002','1992-10-12','Live',''),('James','Adam','Smith','1 Made-Up Street',20130134,'0746574637','james@gmail.com','COMP1001','1992-10-12','Live',''),('Ian','Alan','Edwards','1 Made-Up Street',20130135,'0748574634','ian@gmail.com','COMP1001','1992-10-12','Live',''),('Alan','Ian','Jones','1 Made-Up Street',20130136,'0746352632','alan@gmail.com','COMP1002','1992-10-12','Live',''),('Daryll','David','Patchett','1 Made-Up Street',20130137,'0736253625','daryll@gmail.com','COMP1002','1992-10-12','Live',''),('Colin','Ian','Hickman','1 Made-Up Street',20130138,'0736253635','colin@gmail.com','COMP1002','1992-10-12',NULL,'');
+INSERT INTO `students` VALUES ('Shane','Paul','Donnelly','20 Thornbridge Close\nRushden\nNorthamptonshire\nNN109NJ',15400372,'0775485548','shanedonnelly@hotmail.com','COMP1001','1992-10-12','Live'),('Christopher','Graham','Edwards','1 Made-Up Street',20130106,'0758475847','christopher@gmail.com','COMP1001','1992-10-11','Live'),('Graham','Daniel','Vinitchaikul','1 Made-Up Street',20130107,'0748574837','graham@gmail.com','COMP1001','1992-02-12','Live'),('Asad','Ian','Cox','1 Made-Up Street',20130113,'0786758499','asad@gmail.com','COMP1001','1992-10-12','Live'),('Andrew','Hiren','Carpenter','1 Made-Up Street',20130116,'0748574888','andrew@gmail.com','COMP1001','1992-10-12','Live'),('Alexander','Brul','Begum','1 Made-Up Street',20130117,'0735262534','alexander@gmail.com','COMP1001','1992-10-12','Live'),('Adam','Daniel','Stevenson','1 Made-Up Street',20130119,'0724352111','adam@gmail.com','COMP1001','1992-10-12','Live'),('Benjamin','Darren','Corke','1 Made-Up Street',20130122,'0725342511','benjamin@gmail.com','COMP1002','1992-10-12','Live'),('Andrew','Gavin','Brown','1 Made-Up Street',20130124,'0736472344','andrew@gmail.com','COMP1002','1992-10-12','Live'),('David','Graham','O\'toole','1 Made-Up Street',20130127,'0758462984','david@gmail.com','COMP1002','1992-10-12','Live'),('Darren','Gary','Mathoo','1 Made-Up Street',20130128,'0748372837','darren@gmail.com','COMP1002','1992-10-12','Live'),('Adam','Ben','Wright','1 Made-Up Street',20130130,'0736253625','adam@gmail.com','COMP1002','1992-10-12','Live'),('Andrew','Ben','Bonney','1 Made-Up Street',20130132,'0735263527','andrew@gmail.com','COMP1002','1992-10-12','Live'),('Japhet','Ruffel','Horton','1 Made-Up Street',20130133,'0348348348','japhet@gmail.com','COMP1002','1992-10-12','Live'),('James','Adam','Smith','1 Made-Up Street',20130134,'0746574637','james@gmail.com','COMP1001','1992-10-12','Live'),('Ian','Alan','Edwards','1 Made-Up Street',20130135,'0748574634','ian@gmail.com','COMP1001','1992-10-12','Live'),('Alan','Ian','Jones','1 Made-Up Street',20130136,'0746352632','alan@gmail.com','COMP1002','1992-10-12','Live'),('Daryll','David','Patchett','1 Made-Up Street',20130137,'0736253625','daryll@gmail.com','COMP1002','1992-10-12','Live'),('Colin','Ian','Hickman','1 Made-Up Street',20130138,'0736253635','colin@gmail.com','COMP1002','1992-10-12',NULL);
 /*!40000 ALTER TABLE `students` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1139,4 +1211,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-06 14:41:37
+-- Dump completed on 2017-04-19 10:07:43
