@@ -14,9 +14,9 @@ require_once 'compiler.php';
 $password = 'password123';
 $hashed = password_hash($password, PASSWORD_DEFAULT);
 
-$stmt = $pdo->prepare('UPDATE students 
+$stmt = $pdo->prepare('UPDATE students
                                 SET password = :id
-                                WHERE lastName = "Insert_LastName_Here" ');
+                                WHERE lastName = "Edwards" ');
 $criteria = [
     'id' => $hashed
 ];

@@ -1,3 +1,4 @@
+<?php require 'compiler.php'; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,7 +22,17 @@
               <img src="Media/image.png" alt="" height="28px" width="28px"> <!-- Image is place holder, will be replaced with user image -->
             </div>
             <div class="userName">
-              <p>User's Name</p>
+                <?php
+                    $stmt = $pdo->prepare('SELECT * FROM students WHERE studentId = :id');
+                    $criteria = [
+                            'id' => $_SESSION['user']
+                    ];
+                    $stmt->execute($criteria);
+                    foreach ($stmt as $key)
+                    {
+                        echo '<p>' . $key['firstName'] . ' ' . $key['lastName'] . '</p>';
+                    }
+                ?>
             </div>
           </div>
         </div>

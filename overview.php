@@ -1,5 +1,5 @@
 <?php
-  require 'data-connectoin.php';
+  require 'compiler.php';
   $title = 'WUC | Overview';
   include 'head.php';
   echo '
@@ -11,36 +11,27 @@
       <div class="overview">
         <div class="left">
           <h1>Quick Announcements</h1>
-          <div class="aContain">
-            <div class="item">
-              <h1>Example Module Title</h1>
-              <p>Example Module Announcement Text</p>
-            </div>
-            <div class="item">
-              <h1>Example Module Title</h1>
-              <p>Example Module Announcement Text</p>
-            </div>
-            <div class="item">
-              <h1>Example Module Title</h1>
-              <p>Example Module Announcement Text</p>
-            </div>
-            <div class="item">
-              <h1>Example Module Title</h1>
-              <p>Example Module Announcement Text</p>
-            </div>
-            <div class="item">
-              <h1>Example Module Title</h1>
-              <p>Example Module Announcement Text</p>
-            </div>
-            <div class="item">
-              <h1>Example Module Title</h1>
-              <p>Example Module Announcement Text</p>
-            </div>
-            <div class="item">
-              <h1>Example Module Title</h1>
-              <p>Example Module Announcement Text</p>
-            </div>
-          </div>
+          <div class="aContain">';
+            $results = $pdo->prepare('SELECT * FROM announcements');
+            $results->execute();
+            foreach ($results as $key)
+            {
+                $code = $pdo->prepare('SELECT title FROM modules WHERE module_code = :code LIMIT 1');
+                $criteria = [
+                    'code' => $key['module_code']
+                ];
+                $title;
+                $code->execute($criteria);
+                foreach ($code as $row)
+                {
+                    $title = $row['title'];
+                }
+                echo '<div class="item">
+                        <h1>' . $key['title'] . ' - ' . $title .  '</h1>
+                        <p>' . $key['content'] . '</p>
+                        </div>';
+            }
+          echo'</div>
         </div>
         <div class="right">
           <h1>Your Progress</h1>

@@ -8,32 +8,18 @@
           </div>
           <div class="announcements">
             <h1>Announcements</h1>
-            <div class="annContainer">
-              <div class="acItemS">
-                <p>Announcement Information - Social</p>
-              </div>
-              <div class="acItemP">
-                <p>Announcement Information - Personal</p>
-              </div>
-              <div class="acItemM">
-                <p>Announcement Information - Module</p>
-              </div>
-              <div class="acItemS">
-                <p>Announcement Information - Social</p>
-              </div>
-              <div class="acItemP">
-                <p>Announcement Information - Personal</p>
-              </div>
-              <div class="acItemM">
-                <p>Announcement Information - Module</p>
-              </div>
-              <div class="acItemM">
-                <p>Announcement Information - Module</p>
-              </div>
-              <div class="acItemP">
-                <p>Announcement Information - Personal</p>
-              </div>
-            </div>
+            <div class="annContainer">';
+            $stmt = $pdo->prepare('SELECT * FROM announcements');
+            $stmt->execute();
+            foreach ($stmt as $key)
+            {
+                echo '<div class="acItem' . $key['type'] . '">
+                        <p class="title">' . $key['title'] . '</p>
+                        <p>' . $key['content'] . '</p>
+                        <i>Posted: ' . $key['date'] . '</i>
+                      </div>';
+            }
+            echo '</div>
           </div>
         </div>';
 

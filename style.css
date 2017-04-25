@@ -35,7 +35,7 @@ html, body
   width: calc(100% / 7);
   height: 9vh;
   transition: all 350ms ease-in-out;
-  background-color: lightblue;
+  background-color: #3E7CB1;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -43,11 +43,12 @@ html, body
   z-index: 5;
   text-decoration: none;
   color: inherit;
+  color: white;
 }
 
 .navigation ul .item:hover
 {
-  background-color: lightcyan;
+  background-color: #0047B6;
 }
 
 .navigation ul .item:first-child
@@ -69,6 +70,8 @@ html, body
   background-color: gray;
   z-index: 2;
   overflow-y: hidden;
+  color: white;
+  font-weight: bolder;
 }
 
 .userContainer .userImage
@@ -91,6 +94,10 @@ html, body
 .userContainer .userName
 {
   width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -261,37 +268,10 @@ html, body
   box-sizing: border-box;
   padding: 1%;
   cursor: pointer;
+  background-color: #3E7CB1;
+  color: white;
 }
 
-.module:nth-of-type(1)
-{
-  background-color: palegreen;
-}
-
-.module:nth-of-type(2)
-{
-  background-color: paleturquoise;
-}
-
-.module:nth-of-type(3)
-{
-  background-color: steelblue;
-}
-
-.module:nth-of-type(4)
-{
-  background-color: lightcoral;
-}
-
-.module:nth-of-type(5)
-{
-  background-color: indianred;
-}
-
-.module:nth-of-type(6)
-{
-  background-color: firebrick;
-}
 
 .overview
 {
@@ -306,10 +286,11 @@ html, body
   max-width: 50%;
   width: 50%;
   max-height: 50vh;
-  background-color: #C0E4F4;
-  border-right: 2px solid black;
+  background-color: #3E7CB1;
+  border-right: 2px solid white;
   text-align: center;
   box-sizing: border-box;
+  color: white;
 }
 
 .overview .left .aContain
@@ -322,7 +303,7 @@ html, body
 {
   width: 95%;
   margin: 0 auto;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   box-sizing: border-box;
   padding: 2% 0 2% 0;
 }
@@ -332,7 +313,7 @@ html, body
   width: 95%;
   margin: 2% auto;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .overview .left .item h1
@@ -344,16 +325,17 @@ html, body
 {
   max-width: 50%;
   width: 50%;
-  background-color: #75F0ED;
+  background-color: #3E7CB1;
   text-align: center;
   box-sizing: border-box;
+  color: white;
 }
 
 .overview .right h1
 {
   width: 95%;
   margin: 0 auto;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   box-sizing: border-box;
   padding: 2% 0 2% 0;
 }
@@ -390,7 +372,8 @@ html, body
   margin: 0;
   box-sizing: border-box;
   padding: 1% 0;
-  background-color: #ADD8E6;
+  background-color: #3E7CB1;
+  color: white;
 }
 
 .mainAttendance p
@@ -414,13 +397,15 @@ html, body
   margin: 0;
   box-sizing: border-box;
   padding: 1% 0;
-  background-color: #ADD8E6;
+  background-color: #3E7CB1;
+  color: white;
 }
 
 .moduleAttendance .miContainer
 {
   max-height: 30vh;
   overflow-y: scroll;
+  background-color: lightgray;
 }
 
 .moduleAttendance .mAttend
@@ -429,36 +414,8 @@ html, body
   margin: 1% auto;
   box-sizing: border-box;
   border: 1px solid black;
-}
-
-.moduleAttendance .mAttend:nth-of-type(1)
-{
-  background-color: palegreen;
-}
-
-.moduleAttendance .mAttend:nth-of-type(2)
-{
-  background-color: paleturquoise;
-}
-
-.moduleAttendance .mAttend:nth-of-type(3)
-{
-  background-color: steelblue;
-}
-
-.moduleAttendance .mAttend:nth-of-type(4)
-{
-  background-color: lightcoral;
-}
-
-.moduleAttendance .mAttend:nth-of-type(5)
-{
-  background-color: indianred;
-}
-
-.moduleAttendance .mAttend:nth-of-type(6)
-{
-  background-color: firebrick;
+  background-color: #3E7CB1;
+  color: white;
 }
 
 .moduleAttendance .mAttend h1
@@ -467,7 +424,7 @@ html, body
   box-sizing: border-box;
   padding: 1% 0;
   width: 95%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid white;
 }
 
 .personalAttendance
@@ -476,6 +433,7 @@ html, body
   width: 80%;
   box-sizing: border-box;
   border: 2px solid black;
+  background-color: lightgray;
 }
 
 .personalAttendance > h1
@@ -484,7 +442,8 @@ html, body
   margin: 0;
   box-sizing: border-box;
   padding: 1% 0;
-  background-color: #ADD8E6;
+  background-color: #3E7CB1;
+  color: white;
 }
 
 .\34 04 {
@@ -516,6 +475,7 @@ html, body
     margin: 2% auto;
     box-sizing: border-box;
     border: 2px solid black;
+    background-color: lightgray;
 }
 
 .announcements h1 {
@@ -523,7 +483,8 @@ html, body
     margin: 0;
     box-sizing: border-box;
     padding: 1% 0;
-    background-color: #ADD8E6;
+    background-color: #3E7CB1;
+   color: white;
 }
 
 .announcements .annContainer {
@@ -531,7 +492,23 @@ html, body
     overflow-y: scroll;
 }
 
-.announcements .annContainer .acItemM {
+.announcements .annContainer .title
+{
+  font-size: 1.2em;
+  font-weight: bolder;
+  border-bottom: 1px solid black;
+  padding: 1% 0;
+  width: 90%:
+  margin: 0 auto;
+}
+
+.announcements .annContainer i
+{
+  font-size: 0.8em;
+  color: grey;
+}
+
+.announcements .annContainer .acItemModule {
     box-sizing: border-box;
     width: 95%;
     margin: 2% auto;
@@ -539,7 +516,7 @@ html, body
     background-color: palegoldenrod;
 }
 
-.announcements .annContainer .acItemP {
+.announcements .annContainer .acItemPersonal {
     box-sizing: border-box;
     width: 95%;
     margin: 2% auto;
@@ -547,7 +524,7 @@ html, body
     background-color: aquamarine;
 }
 
-.announcements .annContainer .acItemS {
+.announcements .annContainer .acItemSocial {
     box-sizing: border-box;
     width: 95%;
     margin: 2% auto;
@@ -567,7 +544,7 @@ html, body
   box-sizing: border-box;
   text-align: center;
   color: white;
-  animation: error 5s 1 forwards; 
+  animation: error 5s 1 forwards;
   top: 0;
   left: 0;
 }
@@ -636,7 +613,7 @@ html, body
 
 .moduleMenu h2
 {
-  margin-bottom: 1%; 
+  margin-bottom: 1%;
 }
 
 .moduleMenu button
@@ -742,6 +719,60 @@ html, body
   font-size: 1.1em;
   padding: 1% 0;
   border-bottom: 1px solid black;
+}
+
+
+.topRow
+{
+  width: 100%;
+}
+
+.topRow .module
+{
+  width: calc(100% / 6);
+  height: auto;
+  font-size: 1.2em;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4em 0;
+}
+
+.bottomRow
+{
+  width: 100%;
+}
+
+.bottomRow .module
+{
+  width: calc(100% / 6);
+  font-size: 1.2em;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4em 0;
+}
+
+.diaryTable
+{
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.diaryTable .heading
+{
+  background-color: paleturquoise;
+  border: 2px solid black;
+}
+
+.diaryTable .time
+{
+  background-color: paleturquoise;
+  border: 2px solid black;
 }
 
 /* ---------------------- ISH ------------------------------ */
