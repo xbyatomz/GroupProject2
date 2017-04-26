@@ -17,107 +17,37 @@
 
 		<table class="diaryTable">
 			<tr>
-				<th class="heading">Time</th>
-				<th class="time">08:00-09:00</th>
-				<th class="time">09:00-10:00</th>
-				<th class="time">10:00-11:00</th>
-				<th class="time">11:00-12:00</th>
-				<th class="time">12:00-13:00</th>
-				<th class="time">13:00-14:00</th>
-				<th class="time">14:00-15:00</th>
-				<th class="time">15:00-16:00</th>
-				<th class="time">16:00-17:00</th>
-				<th class="time">17:00-18:00</th>
-				<th class="time">18:00-19:00</th>
-				<th class="time">19:00-20:00</th>
-				<th class="time">20:00-21:00</th>
-				<th class="time">21:00-22:00</th>
-			</tr>
+				<th class="heading"></th>
+				<th id="9" class="time">09:00</th>
+				<th id="10" class="time">10:00</th>
+				<th id="11" class="time">11:00</th>
+				<th id="12" class="time">12:00</th>
+				<th id="13" class="time">13:00</th>
+				<th id="14" class="time">14:00</th>
+				<th id="15" class="time">15:00</th>
+				<th id="16" class="time">16:00</th>
+				<th id="17" class="time">17:00</th>
+				<th id="18" class="time">18:00</th>
 			<tr>
 					<th class="heading">Monday</th>
-						<td></td>
-						<td id="lightpinkModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td></td>
-						<td id="pinkModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+
 				</tr>
 				<tr>
 					<th class="heading">Tuesday</th>
-						<td></td>
-						<td id="lightblueModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td id="lightblueModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td></td>
-						<td></td>
-						<td id="pinkModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+
 				</tr>
 				<tr>
 					<th class="heading">Wednesday</th>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td id="greenModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td id="greenModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+
 				</tr>
 				<tr>
 					<th class="heading">Thursday</th>
-						<td></td>
-						<td id="redModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td id="redModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td></td>
-						<td></td>
-						<td id="blueModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td id="blueModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+
 					</th>
 				</tr>
 				<tr>
 					<th class="heading">Friday</th>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td id="lightpinkModule">Module Code Lecture/Practical Group No. Room No.</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+
 				</tr>
 			</table>
 	<div class="bottomButtonsContainer">

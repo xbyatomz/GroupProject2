@@ -1,6 +1,4 @@
 <?php
-	session_start();
-	
     $title = 'WUC | Diary Page';
     require 'head.php';
 
@@ -8,15 +6,7 @@
 		<div class="title">
 			<h1>Your Calendar</h1>
 		</div>';
-		
-$server = 'v.je';
-$username = 'student';
-$password = 'student';
 
-$schema = 'csy2028';
-$pdo = new PDO('mysql:dbname=' . $schema . ';host=' . $server, $username, $password,
-[ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
-		
 	//Event building
 	$events = array();
 	/*$query = "SELECT title, DATE_FORMAT(event_date,'%Y-%m-%D') AS event_date FROM events WHERE event_date LIKE '$year-$month%'";
@@ -26,11 +16,11 @@ $pdo = new PDO('mysql:dbname=' . $schema . ';host=' . $server, $username, $passw
 	*/
 	$stmt = $pdo->prepare("SELECT title, DATE_FORMAT(event_date,'%Y-%m-%D') AS event_date FROM events WHERE event_date LIKE '$year-$month%'");
 	$stmt->execute();
-	
+
 	foreach($stmt as $data){
 		echo $events[$row['event_date']][] = $row;
 		}
-		
+
 /* draws a calendar */
 function draw_calendar($month,$year,$events = array()){
 
@@ -62,7 +52,7 @@ function draw_calendar($month,$year,$events = array()){
 		$calendar.= '<td class="calendar-day"><div style="position:relative;height:100px;">';
 			/* add in the day number */
 			$calendar.= '<div class="day-number">'.$list_day.'</div>';
-			
+
 			$event_day = $year.'-'.$month.'-'.$list_day;
 			if(isset($events[$event_day])) {
 				foreach($events[$event_day] as $event) {
@@ -93,7 +83,7 @@ function draw_calendar($month,$year,$events = array()){
 
 	/* final row */
 	$calendar.= '</tr>';
-	
+
 
 	/* end the table */
 	$calendar.= '</table>';
@@ -101,7 +91,7 @@ function draw_calendar($month,$year,$events = array()){
 	/** DEBUG **/
 	$calendar = str_replace('</td>','</td>'."\n",$calendar);
 	$calendar = str_replace('</tr>','</tr>'."\n",$calendar);
-	
+
 	/* all done, return result */
 	return $calendar;
 }
@@ -151,7 +141,7 @@ while($row = mysql_fetch_assoc($result)) {
 	$events = array();
 	$stmt = $pdo->prepare("SELECT title, DATE_FORMAT(event_date,'%Y-%m-%D') AS event_date FROM events WHERE event_date LIKE '$year-$month%'");
 	$stmt->execute();
-	
+
 	foreach($stmt as $data){
 		echo $events[$row['event_date']][] = $row;
 		}
@@ -161,6 +151,6 @@ echo '<div style="float:left;">'.$controls.'</div>';
 echo '<div style="clear:both;"></div>';
 echo draw_calendar($month,$year,$events);
 echo '<br /><br />';
-	
+
 			require 'foot.php';
 	?>

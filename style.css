@@ -14,6 +14,7 @@ html, body
 {
   z-index: 4;
   width: 100vw;
+  box-shadow: 0px 0px 17px 2px black;
 }
 
 .navigation ul
@@ -25,6 +26,7 @@ html, body
   height: 7vh;
   display: flex;
   align-items: center;
+  box-shadow: 0px 0px 10px 20px black;
 }
 
 .navigation ul .item
@@ -44,6 +46,7 @@ html, body
   text-decoration: none;
   color: inherit;
   color: white;
+  border-bottom: 2px solid black;
 }
 
 .navigation ul .item:hover
@@ -142,14 +145,15 @@ html, body
   background-size: 60% 40%;
   background-repeat: no-repeat;
   background-blend-mode: color;
-  -webkit-filter: grayscale(100%) opacity(70%);
+  -webkit-filter: opacity(70%);
 }
 
 .Rightcontainer
 {
   width: 55%;
   height: 100%;
-  background-color: paleturquoise;
+  background-color: #3E7CB1;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,6 +181,8 @@ html, body
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: lightgray;
+  color: black;
 }
 
 .loginContainer form
@@ -207,9 +213,10 @@ html, body
   border: 2px solid black;
   font-size: 1.2em;
   margin-bottom: 1.3em;
-  background-color: palegreen;
+  background-color: cornflowerblue;
   transition: all 300ms ease-in-out;
   cursor: pointer;
+  padding: 0.3em 0;
 }
 
 .loginContainer form .submit:hover
@@ -535,7 +542,7 @@ html, body
 .error
 {
   position: absolute;
-  background-color: rgba(255, 0 ,0 ,0.7);
+  background-color: rgb(204, 0 ,0);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   width: 100%;
@@ -544,7 +551,7 @@ html, body
   box-sizing: border-box;
   text-align: center;
   color: white;
-  animation: error 5s 1 forwards;
+  animation: error 3s 1 forwards;
   top: 0;
   left: 0;
 }
@@ -555,7 +562,7 @@ html, body
   {
     top: -100%;
   }
-  15%
+  10%
   {
     top: 0;
   }
@@ -778,6 +785,76 @@ html, body
   border: 2px solid black;
 }
 
+.moduleContainer
+{
+  width: 90%;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.moduleContainer h2
+{
+  width: 100%;
+  background-color: #3E7CB1;
+  font-size: 1.1em;
+  padding: 1% 0;
+  border-bottom: 2px solid black;
+  color: white;
+  margin: 0;
+}
+
+.moduleRow
+{
+  width: 100%;
+  display: inline-flex;
+}
+
+.moduleList
+{
+  width: 30%;
+  height: auto;
+  border-right: 2px solid black;
+  box-sizing:  border-box;
+  perspective: 1000px;
+}
+
+.moduleList ul
+{
+  width: 80%;
+  height: 100%;
+  list-style: none;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.moduleList ul li
+{
+  width: 95%;
+  margin: 0.25em auto;
+  padding: 0.5em 0;
+  border: 2px solid black;
+  background-color: cornflowerblue;
+  transition: all 250ms ease-in-out;
+}
+
+.moduleList ul li:hover
+{
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 7px;
+  z-index: 5;
+}
+
+.moduleList ul a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.moduleContent
+{
+  width: 70%;
+}
 /* ---------------------- ISH ------------------------------ */
 
 #topicHeading{

@@ -56,8 +56,8 @@
               <p>Login</p>
               <div class="form">
                 <form class="loginForm" action="login.php" method="post">
-                  <label for="uname">Username: </label><input class="text" type="text" name="username" value="" placeholder="Student Number" required>
-                  <label for="pword">Password: </label><input class="text" type="password" name="password" value="" placeholder="" required>
+                  <label for="uname">Username: </label><input class="text" type="text" name="username" value="" placeholder="Student Number" autocomplete="off" required>
+                  <label for="pword">Password: </label><input class="text" type="password" name="password" value="" placeholder="" autocomplete="off" required>
                   <input class="submit" type="submit" name="submit" value="Login">
                 </form>
               </div>

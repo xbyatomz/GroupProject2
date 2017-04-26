@@ -39,7 +39,7 @@
         <div class="navigation"> <!-- The naviagtion bar - THIS IS GENERIC AND SHOULDN'T BE MODIFIED -->
           <ul>
             <a href="overview.php" class="item"><li></li></a>
-            <li class="item">Course</li>
+            <a class="item" href="course.php"><li>Course</li></a>
             <a href="announcements.php" class="item"><li>Annoucements</li></a>
               <a class="item" href="diary.php"><li>Diary</li></a>
             <a href="attenance.php" class="item"><li>Attendance</li></a>
